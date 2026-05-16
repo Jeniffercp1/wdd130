@@ -1,0 +1,44 @@
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+aside {
+    width: 300px;
+    /* ancho */
+    margin: 20px auto;
+    /* margen */
+    border: 1px solid #ccc;
+    /* borde (sutil) */
+    padding: 15px;
+    /* relleno (padding) */
+    background-color: #f9f9f9;
+    /* color de fondo */
+    color: #333333;
+    /* color del texto */
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 40px;
+    /* 1. Margen superior para separarlo del main */
+    border-top: 1px solid #bbb;
+    /* 2. Borde superior para diseñar una distinción */
+    text-align: center;
+    /* 3. Alinear cualquier texto en footer al centro */
+}
