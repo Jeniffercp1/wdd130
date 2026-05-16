@@ -1,21 +1,41 @@
+nav {
+    background-color: #333333;
+    /* Color de fondo oscuro para el menú */
+    padding: 10px;
+    /* Relleno alrededor de la navegación */
+}
+
+nav a {
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
 main {
     max-width: 800px;
     margin: 0 auto;
 }
 
+h1 {
+    color: #222222;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #333333;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 aside {
     width: 300px;
-    /* ancho */
     margin: 20px auto;
-    /* margen */
     border: 1px solid #ccc;
-    /* borde (sutil) */
     padding: 15px;
-    /* relleno (padding) */
     background-color: #f9f9f9;
-    /* color de fondo */
     color: #333333;
-    /* color del texto */
 }
 
 aside img {
@@ -25,20 +45,12 @@ aside img {
     margin: 0 auto;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-}
-
 p {
     padding: 0;
 }
 
 footer {
     margin-top: 40px;
-    /* 1. Margen superior para separarlo del main */
     border-top: 1px solid #bbb;
-    /* 2. Borde superior para diseñar una distinción */
     text-align: center;
-    /* 3. Alinear cualquier texto en footer al centro */
 }
