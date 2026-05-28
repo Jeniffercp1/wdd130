@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">Happy rafting client</title>
+  <desc id="desc">Smiling person wearing a helmet and life jacket</desc>
+  <rect width="180" height="180" rx="18" fill="#9fd3e6"/>
+  <circle cx="90" cy="70" r="36" fill="#f1c6a8"/>
+  <path d="M55 63c4-30 25-45 58-36 13 4 23 15 25 36Z" fill="#f6c85f"/>
+  <path d="M52 65h76" stroke="#1f2933" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="76" cy="73" r="4" fill="#1f2933"/>
+  <circle cx="104" cy="73" r="4" fill="#1f2933"/>
+  <path d="M76 92c10 9 20 9 29 0" fill="none" stroke="#1f2933" stroke-width="5" stroke-linecap="round"/>
+  <path d="M43 180c3-44 24-68 47-68s44 24 47 68Z" fill="#123c69"/>
+  <path d="M64 126h52v54H64Z" fill="#f6c85f"/>
+  <path d="M78 126v54M102 126v54" stroke="#1f2933" stroke-width="4"/>
+</svg>
