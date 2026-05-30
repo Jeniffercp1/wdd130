@@ -1,3 +1,4 @@
+/* --- Regla combinada para centrar el diseño (Header, Grid y Footer) --- */
 header,
 .grid,
 footer {
@@ -5,68 +6,78 @@ footer {
     margin: 0 auto;
 }
 
+/* --- Menú de Navegación usando CSS Flexbox --- */
 nav {
-    background-color: #333333;
+    background-color: steelblue;
+    padding: 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
 }
 
+/* --- Enlaces del menú (Elementos de bloque, sin decoración) --- */
 nav a {
     display: block;
-    color: #ffffff;
-    padding: 10px 15px;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    /* shorthand for white */
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Encabezado H1 con borde inferior --- */
+main h1 {
+    border-bottom: 2px solid #333333;
+    padding-bottom: 0.5rem;
+}
+
+/* --- Estructura de Cuadrícula (CSS Grid) --- */
 .grid {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 20px;
-    align-items: start;
+    align-items: center;
 }
 
+/* Posición de la columna principal (Derecha) */
 main {
-    margin: 0;
+    grid-column: 2 / 3;
+    margin: 1rem;
 }
 
-h1 {
-    color: #222222;
-    border-bottom: 1px solid #333333;
+/* Posición de la barra lateral (Izquierda) */
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #f0f0f0;
+    /* Fondo gris opcional para que se vea como tarjeta */
+    padding: 1rem;
+    border: 1px solid #dddddd;
+}
+
+/* Estilos de imágenes para que se ajusten bien */
+aside img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
 }
 
 main img {
-    width: 150px;
-    height: auto;
-    border: 2px solid #333333;
-    padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-aside {
-    grid-row: 1;
-    width: auto;
-    margin: 0;
-    border: 1px solid #ccc;
-    padding: 15px;
-    background-color: #f9f9f9;
-    color: #333333;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-p {
-    padding: 0;
-}
-
+/* --- Pie de Página (Footer) --- */
 footer {
-    margin-top: 40px;
-    border-top: 1px solid #bbb;
     text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
