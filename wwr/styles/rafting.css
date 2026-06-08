@@ -174,78 +174,113 @@ section h2 {
   text-align: center;
 }
 
-.contact-grid,
-.employee-grid {
-  display: grid;
-  gap: 24px;
+.contact-page h1 {
+  position: static;
+  margin: 24px 0 0;
+  padding: 0;
+  color: var(--accent1-color);
+  font-family: var(--body-font);
+  font-size: 2rem;
+  text-align: center;
+  background-color: transparent;
 }
 
-.contact-grid {
-  grid-template-columns: 1fr 1.4fr;
-  align-items: stretch;
+.contact-page section {
+  border: 2px solid #9b9b9b;
+  border-bottom: 2px solid #9b9b9b;
+}
+
+.contact-page section h2 {
+  color: var(--accent1-color);
+  font-family: var(--body-font);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.contact-summary {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .contact-details {
-  display: grid;
-  align-content: center;
-  gap: 14px;
-  padding: 20px;
-  background-color: #eef7fa;
-  border-left: 8px solid var(--accent2-color);
+  font-size: 1.05rem;
+  font-weight: 700;
 }
 
 .contact-details p {
   margin: 0;
 }
 
+.contact-grid,
+.employee-grid {
+  display: grid;
+  gap: 28px;
+}
+
+.contact-grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
 .contact-info iframe {
   width: 100%;
-  min-height: 260px;
-  border: 2px solid #c8d8df;
+  min-height: 325px;
+  border: 2px solid #9b9b9b;
 }
 
 .employee-grid {
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
 .employee-grid figure {
+  width: 170px;
   margin: 0;
-  background-color: #eef7fa;
+  text-align: center;
 }
 
 .employee-grid img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  background-color: #e5e5e5;
 }
 
 .employee-grid figcaption {
-  min-height: 56px;
-  padding: 10px;
-  color: var(--primary-color);
+  padding-top: 8px;
+  color: var(--accent1-color);
   font-weight: 700;
-  text-align: center;
 }
 
 form {
   display: grid;
-  gap: 14px;
+  gap: 12px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: center;
+  gap: 16px;
 }
 
 label,
 legend {
-  color: var(--primary-color);
+  color: var(--accent1-color);
   font-weight: 700;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 8px 10px;
   color: var(--accent1-color);
   font: inherit;
-  border: 1px solid #9fb8c3;
+  border: 2px solid #9b9b9b;
+  border-radius: 3px;
 }
 
 textarea {
@@ -254,17 +289,31 @@ textarea {
 
 fieldset {
   display: grid;
-  gap: 10px;
-  padding: 14px;
-  border: 1px solid #9fb8c3;
+  grid-template-columns: 90px 1fr;
+  gap: 10px 16px;
+  padding: 0;
+  border: none;
 }
 
-fieldset label,
-.checkbox-label {
+fieldset legend {
+  float: left;
+  width: 90px;
+  padding: 0;
+}
+
+fieldset label {
+  grid-column: 2;
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--accent1-color);
+  font-weight: 400;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 400;
 }
 
@@ -274,18 +323,20 @@ input[type="checkbox"] {
 }
 
 button {
-  justify-self: start;
-  padding: 12px 24px;
-  color: #fff;
+  width: 100%;
+  padding: 10px 24px;
+  color: var(--accent1-color);
   font: inherit;
   font-weight: 700;
-  background-color: var(--primary-color);
-  border: none;
+  background-color: #eef7fa;
+  border: 2px solid #9b9b9b;
+  border-radius: 3px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0b2b4d;
+  color: #fff;
+  background-color: var(--primary-color);
 }
 
 footer {

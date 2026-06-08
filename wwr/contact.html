@@ -7,11 +7,11 @@
   <meta name="description"
     content="Contact White Water Rafting for trip questions, reservations, directions, and customer support.">
   <meta name="author" content="Jeniffer Carrillo">
-  <title>Contact Us | White Water Rafting</title>
+  <title>White Water Rafting | Contact Us</title>
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<body>
+<body class="contact-page">
   <header>
     <img src="images/rapids-logo.jpeg" alt="Rapids rafting logo">
     <nav>
@@ -24,36 +24,64 @@
     </nav>
   </header>
   <main>
-    <div class="hero contact-hero">
-      <img src="images/rafting-hero-unsplash.jpg"
-        alt="A group of people rafting through whitewater rapids">
-      <h1>Contact Us - White Water Rafting</h1>
-      <article>
-        <img src="images/istock-canoe-splashes.jpg"
-          alt="A man splashing in a red inflatable canoe on a river">
-        <p>
-          We are ready to help you plan your next river adventure. Send us a question,
-          ask about a reservation, or let us know how we can improve your visit.
-        </p>
-      </article>
-    </div>
+    <h1>White Water Rafting Company</h1>
     <section class="contact-info">
-      <h2>Company Information</h2>
-      <div class="contact-grid">
+      <h2>Contact Information</h2>
+      <div class="contact-summary">
         <div class="contact-details">
-          <p><strong>Address:</strong> 123 River Bend Road, Salmon, ID 83467</p>
-          <p><strong>Phone:</strong> (208) 555-0148</p>
-          <p><strong>Email:</strong> info@whitewaterrafting.example</p>
+          <p>123 Main River Street</p>
+          <p>Kolob, California</p>
+          <p>+1 999 999 9999</p>
+          <p>info@whitewater.com</p>
         </div>
+      </div>
+      <div class="contact-grid">
         <iframe
-          src="https://www.google.com/maps?q=Salmon%20Idaho%20River&output=embed"
+          src="https://www.google.com/maps?q=Kolob%20California&output=embed"
           title="Map showing the White Water Rafting office area"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form>
+          <div class="form-row">
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Placeholder" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Placeholder" required>
+          </div>
+
+          <fieldset>
+            <legend>Message Purpose</legend>
+            <label>
+              <input type="radio" name="purpose" value="general" required>
+              General Inquiry
+            </label>
+            <label>
+              <input type="radio" name="purpose" value="reservation">
+              Reservation Question
+            </label>
+            <label>
+              <input type="radio" name="purpose" value="website">
+              Website Suggestion
+            </label>
+          </fieldset>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type here" required></textarea>
+
+          <label class="checkbox-label" for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Please Subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit">Get in Touch!</button>
+        </form>
       </div>
     </section>
     <section class="employees">
-      <h2>Meet Our Team</h2>
+      <h2>We Are Here to Serve You</h2>
       <div class="employee-grid">
         <figure>
           <img src="images/rafting-hero-unsplash.jpg"
@@ -70,42 +98,6 @@
           <figcaption>Sofia Carter, Customer Support</figcaption>
         </figure>
       </div>
-    </section>
-    <section class="contact-form-section">
-      <h2>Send Us a Message</h2>
-      <form>
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" required>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-
-        <fieldset>
-          <legend>Message Purpose</legend>
-          <label>
-            <input type="radio" name="purpose" value="general" required>
-            General Inquiry
-          </label>
-          <label>
-            <input type="radio" name="purpose" value="reservation">
-            Reservation Question
-          </label>
-          <label>
-            <input type="radio" name="purpose" value="website">
-            Website Suggestion
-          </label>
-        </fieldset>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-
-        <label class="checkbox-label" for="newsletter">
-          <input type="checkbox" id="newsletter" name="newsletter">
-          Please subscribe me to the monthly newsletter
-        </label>
-
-        <button type="submit">Send Message</button>
-      </form>
     </section>
   </main>
   <footer>
