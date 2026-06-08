@@ -176,18 +176,86 @@ section h2 {
 
 .contact-page h1 {
   position: static;
-  margin: 24px 0 0;
+  margin: 22px 0 0;
   padding: 0;
   color: var(--accent1-color);
   font-family: var(--body-font);
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
   text-align: center;
   background-color: transparent;
 }
 
+.contact-page header,
+.contact-page main,
+.contact-page footer {
+  width: 940px;
+}
+
+.contact-page header,
+.contact-page footer {
+  background-color: #d8c5f4;
+  border: 2px solid #6f647e;
+}
+
+.contact-page header {
+  grid-template-columns: 220px 1fr;
+  min-height: 150px;
+  padding: 18px 120px;
+  border-bottom: 2px solid #6f647e;
+}
+
+.contact-page header img {
+  width: 125px;
+  justify-self: center;
+}
+
+.contact-page header nav ul {
+  justify-content: center;
+  gap: 0;
+}
+
+.contact-page header nav a {
+  min-width: 120px;
+  padding: 8px 18px;
+  color: var(--accent1-color);
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #7c7585;
+}
+
+.contact-page header nav li + li a {
+  border-left: none;
+}
+
+.contact-page footer {
+  grid-template-columns: 1fr auto;
+  margin-top: 8px;
+  padding: 20px 36px;
+  border-top: 2px solid #6f647e;
+}
+
+.contact-page footer p {
+  justify-self: center;
+  font-weight: 700;
+}
+
+.contact-page .socialmedia img {
+  width: 38px;
+  height: 38px;
+  padding: 2px;
+  background-color: #fff;
+  border: 2px solid #6f647e;
+}
+
 .contact-page section {
+  background-color: #fff;
+  border: none;
+}
+
+.contact-page .employees {
+  margin-top: 24px;
   border: 2px solid #9b9b9b;
-  border-bottom: 2px solid #9b9b9b;
 }
 
 .contact-page section h2 {
@@ -197,15 +265,25 @@ section h2 {
   text-align: center;
 }
 
+.contact-info h2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.contact-info {
+  margin-top: 0;
+  padding: 0 6px 18px;
+}
+
 .contact-summary {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   text-align: center;
 }
 
 .contact-details {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
@@ -216,7 +294,7 @@ section h2 {
 .contact-grid,
 .employee-grid {
   display: grid;
-  gap: 28px;
+  gap: 48px;
 }
 
 .contact-grid {
@@ -226,7 +304,7 @@ section h2 {
 
 .contact-info iframe {
   width: 100%;
-  min-height: 325px;
+  min-height: 350px;
   border: 2px solid #9b9b9b;
 }
 
@@ -236,7 +314,7 @@ section h2 {
 }
 
 .employee-grid figure {
-  width: 170px;
+  width: 150px;
   margin: 0;
   text-align: center;
 }
@@ -257,7 +335,8 @@ section h2 {
 
 form {
   display: grid;
-  gap: 12px;
+  gap: 10px;
+  padding-top: 0;
 }
 
 .form-row {
@@ -276,7 +355,7 @@ legend {
 input,
 textarea {
   width: 100%;
-  padding: 8px 10px;
+  padding: 7px 10px;
   color: var(--accent1-color);
   font: inherit;
   border: 2px solid #9b9b9b;
@@ -324,7 +403,7 @@ input[type="checkbox"] {
 
 button {
   width: 100%;
-  padding: 10px 24px;
+  padding: 8px 24px;
   color: var(--accent1-color);
   font: inherit;
   font-weight: 700;
