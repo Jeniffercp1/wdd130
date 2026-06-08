@@ -112,6 +112,7 @@ h1 {
 .hero article img {
   float: right;
   width: 125px;
+  height: auto;
   margin: 0 0 12px 16px;
   border: 3px solid #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -171,6 +172,120 @@ section h2 {
   font-size: 0.85rem;
   font-weight: 700;
   text-align: center;
+}
+
+.contact-grid,
+.employee-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-grid {
+  grid-template-columns: 1fr 1.4fr;
+  align-items: stretch;
+}
+
+.contact-details {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  padding: 20px;
+  background-color: #eef7fa;
+  border-left: 8px solid var(--accent2-color);
+}
+
+.contact-details p {
+  margin: 0;
+}
+
+.contact-info iframe {
+  width: 100%;
+  min-height: 260px;
+  border: 2px solid #c8d8df;
+}
+
+.employee-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.employee-grid figure {
+  margin: 0;
+  background-color: #eef7fa;
+}
+
+.employee-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.employee-grid figcaption {
+  min-height: 56px;
+  padding: 10px;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+label,
+legend {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  color: var(--accent1-color);
+  font: inherit;
+  border: 1px solid #9fb8c3;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid #9fb8c3;
+}
+
+fieldset label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent1-color);
+  font-weight: 400;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  justify-self: start;
+  padding: 12px 24px;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b2b4d;
 }
 
 footer {
