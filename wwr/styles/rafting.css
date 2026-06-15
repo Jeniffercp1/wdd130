@@ -149,6 +149,23 @@ section h2 {
   height: auto;
 }
 
+.history-photo {
+  margin: 0;
+}
+
+.history-photo img {
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.history-photo figcaption {
+  padding-top: 6px;
+  color: var(--accent1-color);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
 .adventure-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
